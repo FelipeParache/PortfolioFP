@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Felipe Parache</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/166a21bb2a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <div class="logo">Felipe.</div>
+                <ul id="side-menu">
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Desarrollador <span>Full-Stack</span></p>
+                <h1>Felipe Parache</h1>
+            </div>
+        </div>
+    </div>
+    <!--SOBRE MI-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background_.PNG" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre mi</h1>
+                    <p>¡Hola! Soy estudiante de programación en la UTN y me especializo en Python, JavaScript, C# y Java. Disfruto desarrollando desde páginas web hasta videojuegos. Me encanta enfrentar nuevos desafíos y aprender nuevas tecnologías. Combino creatividad con código para construir soluciones eficientes, siempre dispuesto a colaborar en equipo y aportar ideas innovadoras</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('education')">Educación</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Lenguajes de Programación:</span></li>
+                            <li> • Python<br></li>
+                            <li> • C#<br></li>
+                            <li> • Java<br></li>
+                            <li> • JavaScript<br></li>
+                            <li><span>Herramientas y Tecnologías:</span>
+                            <li> • Desarrollo Web con HTML, CSS y JavaScript<br></li>
+                            <li> • Diseño y manejo de bases de datos SQL<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - Presente</span><br>Universidad Tecnológica Nacional (UTN)<br>Tecnicatura Universitaria en Programación</li>
+                            <li><span>2022</span><br>CoderHouse<br>Desarrollo y Programación Web</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SERVICIOS-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Servicios</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Desarrollo Web</h2>
+                    <p>Creación de páginas web interactivas y responsivas utilizando HTML, CSS y JavaScript. Enfoque en experiencia de usuario y diseño moderno</p>
+                    <a href="#portfolio">Ver proyctos</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Aplicaciones de Escritorio</h2>
+                    <p>Desarrollo de software de escritorio en C#, Java y Python. Aplicaciones empresariales y sistemas de gestión con interfaces intuitivas</p>
+                    <a href="#portfolio">Ver proyectos</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Gestión de Bases de Datos</h2>
+                    <p>Diseño e implementación de bases de datos SQL. Optimización de consultas y gestión eficiente de datos</p>
+                    <a href="#portfolio">Ver proyectos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--PORTFOLIO-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Proyectos</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/dbz-platformer.png" alt="repo1">
+                    <div class="layer">
+                        <h3>Platformer</h3>
+                        <p>Juego de plataformas basado en Dragon Ball Z, desarrollado con Pygame. El objetivo es avanzar a través de tres niveles, derrotar enemigos, recolectar objetos y todas las esferas del dragón para enfrentar al enemigo final</p>
+                        <a href="https://github.com/FelipeParache/DBZ-Platformer" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/crud.png" alt="repo2">
+                    <div class="layer">
+                        <h3>CRUD</h3>
+                        <p>Permite a los usuarios gestionar consolas PlayStation, Nintendo y Xbox, incluyendo la adición, modificación y eliminación en una base de datos. También incluye funcionalidades para visualizar y ordenar, así como para abrir y guardar selecciones de consolas</p>
+                        <a href="https://github.com/FelipeParache/Gaming-Store-CRUD/tree/segundoParcial" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/esto-o-aquello.png" alt="repo3">
+                    <div class="layer">
+                        <h3>Esto o Aquello</h3>
+                        <p>Juego de preguntas rápidas donde el usuario compite con cinco jugadores virtuales para adivinar la opción más popular, eligiendo entre dos colores: rojo y azul</p>
+                        <a href="https://github.com/FelipeParache/Esto-o-Aquello" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/FelipeParache" target="_blank" class="btn">Ver más</a>
+        </div>
+    </div>
+    <!--CONTACTO-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacto</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> soyfelipepe@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +54 9 11 4079-9869</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/felipe-parache-71614a333/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/FelipeParache" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/FelipeParacheCV.pdf" download class="btn btn2">Descargá mi CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formsubmit.co/soyfelipepe@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="text" name="subject" placeholder="Asunto" required>
+                        <textarea name="Mensaje" rows="6" placeholder="Mensaje"></textarea>
+                        <input type="hidden" name="_captcha" value="true">
+                        <input type="hidden" name="_template" value="true">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 - Felipe Parache <i class="fa-solid fa-face-smile"></i></p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+                
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+                
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sideMenu = document.getElementById("side-menu");
+
+        function openMenu(){
+            sideMenu.style.right = "0"; 
+        }
+
+        function closeMenu(){
+            sideMenu.style.right = "-200px"; 
+        }
+
+    </script>
+
+</body>
+</html>
